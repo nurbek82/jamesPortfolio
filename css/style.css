@@ -17,6 +17,7 @@
   float: left;
   padding: 0 0 .2em 1em;
   max-width: 80%;
+  padding: 2%;
 }
 
 .clearfix::after {
@@ -27,6 +28,7 @@
 
 h1{
   font-size: 3vw;
+  text-align: center;
 }
 
 h2{
@@ -65,5 +67,5 @@ h2{
 }
 
 .icon-menu{
-  float: right;
+  text-align: right;
 }
