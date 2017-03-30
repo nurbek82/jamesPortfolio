@@ -5,6 +5,12 @@
 .header{
   width: 100%;
   background-color: orange;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 }
 
 .heading-group-h1 {
@@ -56,4 +62,8 @@ h2{
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+}
+
+.icon-menu{
+  float: right;
 }
