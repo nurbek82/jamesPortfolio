@@ -1,0 +1,89 @@
+.wrapper{
+  width: 100%;
+}
+
+.header{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
+  max-width: 80%;
+  padding: 12%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 3px black;
+  border-radius: 5px
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-nav {
+  padding: 0.1em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px #ccc;
+}
+
+.mainflex{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.sectionmain{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+
+.icon-menu{
+  text-align: right;
+}
+
+a{
+  padding: 10%;
+  text-align: center;
+}
+
+.footer{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}

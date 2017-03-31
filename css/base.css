@@ -1,0 +1,43 @@
+header {
+  background-image: url('../assets/images/15780734_10154014027806196_6293599165744642866_n.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+
+h2{
+  font-size: 2vw;
+  color: white;
+}
+
+.wrapper{
+  background-color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img{
+  max-width: 20%;
+}
+
+p{
+  color: white;
+}
+
+.icon-menu{
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
