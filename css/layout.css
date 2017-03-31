@@ -7,7 +7,7 @@
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-between;
   align-items: center;
 }
@@ -16,7 +16,10 @@
   float: left;
   padding: 0 0 .2em 1em;
   max-width: 80%;
-  padding: 2%;
+  padding: 12%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 3px black;
+  border-radius: 5px
 }
 
 .clearfix::after {
@@ -47,11 +50,26 @@
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-between;
   align-items: center;
 }
 
 .icon-menu{
   text-align: right;
+}
+
+a{
+  padding: 10%;
+  text-align: center;
+}
+
+.footer{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
 }
