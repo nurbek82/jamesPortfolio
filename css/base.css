@@ -36,6 +36,7 @@ img{
 p{
   color: white;
   font-size: 2vw;
+  display: inline-block;
 }
 
 .icon-menu{
