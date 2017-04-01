@@ -15,8 +15,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: left;
-    align-items: left;
+    align-content: center;
+    align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
 

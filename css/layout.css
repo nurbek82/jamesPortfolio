@@ -48,14 +48,15 @@
   border-bottom: 1px #ccc;
 }
 
-
 .sectionmain{
+  width: 100%;
+  margin-left: 22%;
   display:flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-content: center;
-   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 
