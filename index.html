@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
+  <link href="js/vendor/CSS/jquery.urlive.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/icons.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../assets/images/JamesBillard.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Billard in Code</title>
 </head>
 <body>
@@ -47,16 +48,14 @@
         <h1>My Projects</h1>
 
         <section id="projectstodom">
-          <article class="template" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
+          <section class="template" data-category="cat">
+            <section id="proheader">
+              <h1 class="protitle">Title</h1>
+            </Section>
+            <a id="livepreview" href="https://jamesbillard12.github.io/guessing_game/"></a>
+            <div class="urlive-container"></div>
+            <p class="description">description</p>
+          </section>
         </section>
 
       </div>
@@ -70,9 +69,11 @@
 
     </footer>
   </section>
-  <script src="js/vendor/jquery-3.2.0.js" charset="utf-8"></script>
+
+
+  <script src="js/vendor/scripts/jquery-3.2.0.js"></script>
+  <script src="js/vendor/scripts/jquery.urlive.js"></script
   <script src="js/app.js" charset="utf-8"></script>
-  <script src="js/letterstyle.js" charset="utf-8"></script>
 
   </script>
 </body>
