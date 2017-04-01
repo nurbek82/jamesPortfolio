@@ -4,7 +4,13 @@ header {
   background-size: cover;
 }
 
-h1{
+.heading-group-h1 h1{
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+
+.mainflex h1{
   font-size: 3vw;
   text-align: center;
   color: white;
