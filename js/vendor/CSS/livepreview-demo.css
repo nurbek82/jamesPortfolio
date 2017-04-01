@@ -8,10 +8,10 @@
 
 #livepreview_dialog {
     padding:0px;
-    height:200px;  
+    height:200px;
     width:300px;
     background-color:#fff;
-    background-image:url('/images/icon_loading.gif');
+    background-image:url('/Users/jamesrbillard/programs/code_fellows/code_301/portfolio/jamesPortfolio/assets/GIF/icon_loading.gif');
     background-repeat:no-repeat;
     background-position:center center;
     position:absolute;
@@ -38,7 +38,7 @@
 #livepreview_dialog.bottom:after {
     border-color: rgba(255, 255, 255, 0);
     border-bottom-color: #ffffffff;
-    border-width: 20px; 
+    border-width: 20px;
     margin-left: -20px;
 }
 #livepreview_dialog.bottom:before {
@@ -104,8 +104,3 @@
     border-width: 26px;
     margin-top: -26px;
 }
-
-
-
-
-
