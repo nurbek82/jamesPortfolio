@@ -4,7 +4,13 @@ header {
   background-size: cover;
 }
 
-h1{
+.heading-group-h1 h1{
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+
+.mainflex h1{
   font-size: 3vw;
   text-align: center;
   color: white;
@@ -22,6 +28,7 @@ h2{
 a{
   text-decoration: none;
   color: white;
+  font-size: 3vw;
 }
 
 a:hover{
@@ -34,10 +41,16 @@ img{
 
 p{
   color: white;
+  font-size: 2vw;
+  display: inline-block;
 }
 
 .icon-menu{
   color: white;
   text-align: center;
   font-size: 10px;
+}
+
+time {
+  color: white;
 }
