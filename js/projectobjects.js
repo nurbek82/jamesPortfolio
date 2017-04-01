@@ -12,9 +12,9 @@ var rawData = [
 
   {
     name:   'Salmon Cookies',
-    url: 'https://jamesbillard12.github.io/guessing_game/',
+    url: 'https://jamesbillard12.github.io/Cookie-stand1/',
     date: '2017-11-03',
-    description: 'The first page I ever made at Code Fellows.',
+    description: 'This was our first assignment with the goal of populating information into the dom.',
   },
 
   {
