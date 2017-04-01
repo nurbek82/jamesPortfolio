@@ -49,7 +49,7 @@
 }
 
 .sectionmain{
-  width: 100%;
+  width: 77%;
   padding-top: 3%;
   padding-bottom: 3%;
   margin-left: 22%;
@@ -86,4 +86,9 @@ a{
 p{
   margin-left: 3%;
   width: 50%
+}
+.description{
+  margin-top: 3%;
+  width: 95%;
+  text-align: left;
 }

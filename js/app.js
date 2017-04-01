@@ -25,12 +25,12 @@ Project.prototype.toHtml = function() {
 
     $newProject.find('h1').html(this.name);
     $newProject.find('.description').html(this.description);
+    $newProject.find('a').html('Hover over this area to see a preview. Click to go to the site.');
     $newProject.find('a').attr('href', this.url);
     $newProject.find('time').attr('datetime', this.date);
     console.log('fin: ', $newProject);
 
-  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.date))/60/60/24/1000) + ' days ago');
-  $newProject.append('<hr>');
+
   return $newProject;
 };
 
