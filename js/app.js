@@ -13,13 +13,12 @@ function Project(opts){
 Project.prototype.toHtml = function() {
   var $newProject = $('section.template').clone();
 
-
   $newProject.removeClass('template');
+
 
   if (!this.date) $newProject.addClass('draft');
   $newProject.data('category', this.category);
 
-  $('.template').remove();
 
   $newProject.find('h1').html(this.name);
   $newProject.find('.description').html(this.description);
@@ -27,8 +26,8 @@ Project.prototype.toHtml = function() {
   $newProject.find('a').attr('href', this.url);
   $newProject.find('time').attr('datetime', this.date);
 
-
-
+  $('.template').hide();
+  $('section').removeAttr('style');
   return $newProject;
 };
 rawData.sort(function(a,b) {
@@ -41,8 +40,4 @@ rawData.forEach(function(projectObject) {
 
 projectsArray.forEach(function(a) {
   $('#projectstodom').append(a.toHtml());
-});
-
-$(document).ready(function() {
-  $(".livepreview").livePreview();
 });
