@@ -41,3 +41,7 @@ rawData.forEach(function(projectObject) {
 projectsArray.forEach(function(a) {
   $('#projectstodom').append(a.toHtml());
 });
+
+$(document).ready(function() {
+  $(".livepreview").livePreview();
+});
