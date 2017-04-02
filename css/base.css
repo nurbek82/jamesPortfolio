@@ -54,6 +54,13 @@ p{
   font-size: 10vw;
 }
 
+.icons{
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.5vw;
+}
+
 time {
   color: white;
 }
@@ -77,12 +84,11 @@ ul{
 
 @media all and (min-width: 431px) {
   a{
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 
-  a:hover{
+  .navlink:hover{
     background-color: red;
-    padding: 1em;
     border-radius: 5px
   }
   .footul a:hover{

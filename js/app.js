@@ -22,6 +22,7 @@ Project.prototype.toHtml = function() {
 
   $newProject.find('h1').html(this.name);
   $newProject.find('.description').html(this.description);
+  $newProject.find('.description').attr(this.url);
   $newProject.find('iframe').attr('src', this.url);
   $newProject.find('a').attr('href', this.url);
   $newProject.find('time').attr('datetime', this.date);
