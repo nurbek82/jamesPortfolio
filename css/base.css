@@ -17,7 +17,7 @@ header {
 }
 
 h2{
-  font-size: 2vw;
+  font-size: 3vw;
   color: white;
 }
 
@@ -48,7 +48,7 @@ p{
 .icon-menu{
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 10vw;
 }
 
 time {
