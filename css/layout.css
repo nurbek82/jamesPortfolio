@@ -34,8 +34,8 @@ Body{
 
 #subtitle{
   margin-top: 1em;
- font-size: 2vw;
- font-family: 'Press Start 2P', cursive;
+  font-size: 2vw;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
@@ -113,11 +113,9 @@ a{
 }
 
 p{
-  margin-left: 3%;
-  width: 95%;
+  width: auto;
 }
 .description{
-  margin-top: 3%;
   width: 95%;
   text-align: left;
 }
@@ -127,27 +125,26 @@ p{
 }
 
 .wrap {
-    width: 20em;
-    height: 192px;
-    margin-left: 8%;
-    padding: 0;
-    overflow: hidden;
+  width: 20em;
+  height: 192px;
+  padding: 0;
+  overflow: hidden;
 }
 .frame {
-    width: 76em;
-    height: 786px;
-    border: 0;
-    -ms-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -o-transform: scale(0.25);
-    -webkit-transform: scale(0.25);
-    transform: scale(0.25);
+  width: 76em;
+  height: 786px;
+  border: 0;
+  -ms-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  -o-transform: scale(0.25);
+  -webkit-transform: scale(0.25);
+  transform: scale(0.25);
 
-    -ms-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 
 
@@ -200,31 +197,29 @@ p{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-
-  .pbox{
-    width: 35%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    align-items: center;
 }
-  }
 
-  .proheader{
-    width: 45%;
-    display: inline-flex;
-  }
+.pbox{
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 3%;
+  max-width: 313px;
 
-  .description{
-    margin-top: 3%;
-    width: 100%;
-    text-align: left;
-  }
+}
+}
+
+.proheader{
+  width: 45%;
+  display: inline-flex;
+}
+
+.description{
+  width: 100%;
+  text-align: left;
+}
 
 }
