@@ -1,4 +1,5 @@
 Body{
+  width:100%;
   min-width: 380px;
 }
 .wrapper{
@@ -47,7 +48,7 @@ Body{
 }
 
 .main-nav {
-  width: 92%;
+  width: 90%;
   padding: 1em;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -194,6 +195,12 @@ p{
     border: solid 3px black;
     border-radius: 5px;
     margin-top: 3%;
+  }
+
+  #subtitle{
+    margin-top: 1em;
+    font-size: 2vw;
+    font-family: 'Press Start 2P', cursive;
   }
 
   .main-nav{

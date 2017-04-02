@@ -30,23 +30,6 @@ ul{
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-a{
-  text-decoration: none;
-  color: white;
-  font-size: 2vw;
-  font-family: 'Press Start 2P', cursive;
-}
-
-
-
-img{
-  max-width: 20%;
-}
-
-p{
-  color: white;
-  font-size: 2vw;
-}
 
 .icon-menu{
   color: white;
@@ -58,8 +41,29 @@ p{
   color: white;
   text-align: center;
   margin-right: 10px;
-  font-size: 1.5vw;
+  font-size: 6vw;
 }
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.navtext{
+  font-size: 5vw;
+}
+
+img{
+  max-width: 20%;
+}
+
+p{
+  color: white;
+  font-size: 2vw;
+}
+
+
 
 time {
   color: white;
@@ -95,5 +99,22 @@ ul{
     background-color: red;
     padding: 0em;
     border-radius:0px
+  }
+
+  .icon-menu{
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .icons{
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.5vw;
+  }
+
+  .navtext{
+    font-size: 1vw;
   }
 }
