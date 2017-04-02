@@ -12,35 +12,31 @@ function Project(opts){
 
 Project.prototype.toHtml = function() {
   var $newProject = $('section.template').clone();
-  console.log('go: ', $newProject);
 
   $newProject.removeClass('template');
-  console.log('re: ', $newProject);
 
 
   if (!this.date) $newProject.addClass('draft');
   $newProject.data('category', this.category);
 
 
+  $newProject.find('h1').html(this.name);
+  $newProject.find('.description').html(this.description);
+  $newProject.find('.description').attr(this.url);
+  $newProject.find('iframe').attr('src', this.url);
+  $newProject.find('a').attr('href', this.url);
+  $newProject.find('time').attr('datetime', this.date);
+  $newProject.addClass('pbox');
 
-    $newProject.find('h1').html(this.name);
-    $newProject.find('.description').html(this.description);
-    $newProject.find('a').html('Hover over this area to see a preview. Click to go to the site.');
-    $newProject.find('a').attr('href', this.url);
-    $newProject.find('time').attr('datetime', this.date);
-    console.log('fin: ', $newProject);
-
-
+  $('.template').hide();
+  $('section').removeAttr('style');
   return $newProject;
 };
-
 rawData.sort(function(a,b) {
-  // REVIEW: Take a look at this sort method; This may be the first time we've seen it.
   return (new Date(b.date)) - (new Date(a.date));
 });
 
 rawData.forEach(function(projectObject) {
-  // REVIEW: Take a look at this forEach method; This may be the first time we've seen it.
   projectsArray.push(new Project(projectObject));
 });
 
