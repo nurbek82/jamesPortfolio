@@ -44,7 +44,7 @@
 }
 
 .main-nav {
-  width: 91%;
+  width: 90%;
   padding: 1em;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -85,12 +85,22 @@
 }
 
 a{
-  padding: 10%;
   text-align: center;
 }
 
 .footer{
   width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.footul{
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -112,6 +122,8 @@ p{
 .main-nav:hover ul {
   display: block;
 }
+
+
 
 @media all and (min-width: 431px) {
   .icon-menu{
@@ -151,9 +163,7 @@ p{
     background-color: rgba(0, 0, 0, 0);
   }
 
-  a{
-    margin: 3vw;
-  }
+
 
   .main-nav li {
     display: inline-block;

@@ -32,7 +32,7 @@ ul{
 a{
   text-decoration: none;
   color: white;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -58,12 +58,36 @@ time {
   color: white;
 }
 
+footer{
+  background-image: url('../assets/images/Rock-Wall-Beautiful-Wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding: 0%;
+}
+
+.footul{
+  color: white;
+  font-size: 2vw;
+  font-family: 'Press Start 2P', cursive;
+}
+ul{
+  width: 100%;
+  align-content: center;
+}
+
 @media all and (min-width: 431px) {
   a{
     font-size: 1.5vw;
   }
 
   a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: red;
+    padding: 1em;
+    border-radius: 5px
+  }
+  .footul a:hover{
+    background-color: red;
+    padding: 0em;
+    border-radius:0px
   }
 }
