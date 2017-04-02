@@ -25,6 +25,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('iframe').attr('src', this.url);
   $newProject.find('a').attr('href', this.url);
   $newProject.find('time').attr('datetime', this.date);
+  $newProject.addClass('pbox');
 
   $('.template').hide();
   $('section').removeAttr('style');
