@@ -114,6 +114,7 @@ a{
 
 p{
   width: auto;
+  margin-bottom: 3%;
 }
 .description{
   width: 95%;
@@ -122,6 +123,36 @@ p{
 
 .main-nav:hover ul {
   display: block;
+}
+
+
+  .projectstodom{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+}
+
+.pbox{
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 3%;
+  max-width: 313px;
+
+}
+}
+
+.proheader{
+  width: 45%;
+  display: inline-flex;
+}
+
+.description{
+  width: 100%;
+  text-align: left;
 }
 
 .wrap {
@@ -149,7 +180,7 @@ p{
 
 
 
-@media all and (min-width: 431px) {
+@media all and (min-width: 468px) {
   .icon-menu{
     display: none;
   }
