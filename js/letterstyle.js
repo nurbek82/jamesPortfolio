@@ -1,1 +1,3 @@
-$("h1").lettering();
+$(document).ready(function() {
+	    $('h1.fancytitle').lettering();
+	  });

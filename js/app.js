@@ -12,10 +12,8 @@ function Project(opts){
 
 Project.prototype.toHtml = function() {
   var $newProject = $('section.template').clone();
-  console.log('go: ', $newProject);
 
   $newProject.removeClass('template');
-  console.log('re: ', $newProject);
 
 
   if (!this.date) $newProject.addClass('draft');
@@ -28,7 +26,6 @@ Project.prototype.toHtml = function() {
   $newProject.find('a').html('Hover over this area to see a preview. Click to go to the site.');
   $newProject.find('a').attr('href', this.url);
   $newProject.find('time').attr('datetime', this.date);
-  console.log('fin: ', $newProject);
 
 
   return $newProject;

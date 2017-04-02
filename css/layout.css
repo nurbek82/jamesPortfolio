@@ -16,11 +16,11 @@
   float: left;
   padding: 0 0 .2em 1em;
   max-width: 80%;
-  padding: 12%;
+  padding: 29%;
   background-color: rgba(0, 0, 0, 0.5);
   border: solid 3px black;
   border-radius: 5px;
-  margin-top: 3%;
+  
 }
 
 .clearfix::after {
@@ -30,11 +30,14 @@
 }
 
 .main-nav {
-  padding: 0.1em;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-nav ul {
+
   display: none;
   padding: 0;
   list-style: none;
@@ -94,7 +97,7 @@ p{
   display: block;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 431px) {
   .icon-menu{
     display: none;
   }
@@ -103,6 +106,7 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
     border: solid 3px;
     width: 80%;
+    padding-left: 0;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -112,6 +116,17 @@ p{
     margin-top: 1%;
     margin-bottom: 1%;
 
+  }
+
+  .heading-group-h1 {
+    float: left;
+    padding: 0 0 .2em 1em;
+    max-width: 80%;
+    padding: 12%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 3px black;
+    border-radius: 5px;
+    margin-top: 3%;
   }
 
   .main-nav ul {
