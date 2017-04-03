@@ -22,9 +22,9 @@ view.handleCategoryFilter = function() {
       console.log('happening');
 
 
-      $('section.pbox').hide();
+      $('section.pbox').fadeOut('slow');
 
-      $('section[data-category="' + $(this).val() + '"]').fadeIn();
+      $('section[data-category="' + $(this).val() + '"]').delay(800).fadeIn('slow');
 
       var $newArticle = ($(this).val());
       console.log($newArticle);
@@ -66,21 +66,6 @@ view.handleMainNav = function () {
 //       $(this).html('Read on →');
 //     }
 //   });
-//
-//   /* TODO: Add a delegated event handler to reveal the remaining paragraphs.
-//   When a .read-on link is clicked, we can:
-//   1. Prevent the default action of a link.
-//   2. Reveal everything in that particular article now.
-//   3. Hide that read-on link!
-//
-//   // STRETCH GOAl!: change the 'Read On' link to 'Show Less'
-//   */
-//
-//
-//
-// };
-
-// TODO: Invoke all of the above functions (I mean, methods!):
 $(function(){
     $('section.tab-content').hide();
     $('#aboutMe').fadeIn();
