@@ -23,7 +23,7 @@ var rawData = [
     name:   'Bus Mall',
     url: 'https://jamesbillard12.github.io/bus-mall/',
     date: '2017-11-03',
-    category: '201',
+    category: '301',
     description: 'This was a practice that involved Chartjs. We were expected to Write a page where user could vote for various image. These votes were kept track of and stored in local storage using json. We used this data to create a bar chart to reveal the stored data.',
   },
 
