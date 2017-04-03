@@ -45,11 +45,11 @@
 
 handleMainNav = function () {
 
+
   $('.main-nav').on('click', '.tab', function() {
 
     event.preventDefault();
     $('section.tab-content').hide();
-    console.log($(this).attr('data-content'));
     // 2.
     $('#' + $(this).attr('data-content')).fadeIn();
 
@@ -88,9 +88,11 @@ handleMainNav = function () {
 
 // TODO: Invoke all of the above functions (I mean, methods!):
 $(function(){
+    $('section.tab-content').hide();
+    $('#aboutMe').fadeIn();
+    handleMainNav();
+
   // articleView.populateFilters();
-  // articleView.handleAuthorFilter();
   // articleView.handleCategoryFilter();
-handleMainNav();
   // articleView.setTeasers();
 });
