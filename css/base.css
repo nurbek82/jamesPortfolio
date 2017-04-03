@@ -1,3 +1,5 @@
+
+
 header {
   background-image: url('../assets/images/15780734_10154014027806196_6293599165744642866_n.jpg');
   background-repeat: no-repeat;
@@ -68,6 +70,29 @@ p{
 
 time {
   color: white;
+}
+.about{
+  background-image: url('../assets/images/tilablewood.jpg');
+  border-top: ridge 10px grey;
+  border-bottom: ridge 10px grey;
+  height: 100%;
+  min-height: 400px;
+}
+
+.projects{
+  background-image: url('../assets/images/mable black.jpg');
+  border-top: ridge 10px grey;
+  border-bottom: ridge 10px grey;
+  height: 100%;
+  min-height: 400px;
+}
+
+.music{
+  background-image: url('../assets/images/30852582-Skull-and-Flowers-Monochrome-Seamless-Background-Stock-Photo.jpg');
+  border-top: ridge 10px grey;
+  border-bottom: ridge 10px grey;
+  height: 100%;
+  min-height: 400px;
 }
 
 footer{
