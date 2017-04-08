@@ -24,15 +24,13 @@ Project.prototype.toHtml = function() {
 };
 
 rawData.sort(function(a,b) {
-  return (new Date(b.date)) - (new Date(a.date));
+  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
 rawData.forEach(function(projectObject) {
   projectsArray.push(new Project(projectObject));
 });
 
-projectsArray.forEach(function(projectsArray) {
-  $('#projectstodom').append(projectsArray.toHtml());
+projectsArray.forEach(function(pjects) {
+  $('#projectstodom').append(pjects.toHtml());
 });
-
-console.log('cat: ' + template);
