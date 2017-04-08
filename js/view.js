@@ -48,7 +48,6 @@ view.handleMainNav = function () {
     $('#' + $(this).attr('data-content')).fadeIn();
 
   });
-  $('.main-nav .tab:first').click();
 };
 
 // articleView.setTeasers = function() {
