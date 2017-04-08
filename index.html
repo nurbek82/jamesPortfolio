@@ -11,6 +11,22 @@
   <link rel="shortcut icon" href="assets/images/JamesBillard.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Billard in Code</title>
+
+  <script id="template" type="text/x-handlebars-template">
+    <section class="pbox" data-category="{{category}}">
+      <section id="proheader" class="proheader">
+        <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
+      </Section>
+      <section>
+        <div o class="wrap">
+          <iframe scrolling = "no" src="{{url}}" target="_top" class="frame"></iframe>
+        </div>
+        <h2>Description:</h2>
+        <a href = "{{url}}" class="description" target="_blank">{{description}}</a>
+      </section>
+    </section>
+
+  </script>
 </head>
 <body>
   <section class="wrapper">
@@ -63,20 +79,12 @@
           </li>
         </ul>
         <h1>My Projects:</h1>
+
         <section id="projectstodom" class="projectstodom">
-          <section class="template" data-category="cat">
-            <section id="proheader" class="proheader">
-              <a href=""><h1 class="protitle"></h1></a>
-            </Section>
-            <section>
-              <div o class="wrap">
-                <iframe scrolling = "no" src="" target="_top" class="frame"></iframe>
-              </div>
-              <h2>Description:</h2>
-              <a href = "" class="description" target="_blank"></a>
-            </section>
-          </section>
+
         </section>
+
+
       </section>
 
 
@@ -103,8 +111,9 @@
 
   </section>
 
-
   <script src="js/vendor/scripts/jquery-3.2.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
   <script src="js/vendor/scripts/jquery-live-preview.js" charset="utf-8"></script>
   <script src="js/projectobjects.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>

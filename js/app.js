@@ -2,37 +2,27 @@
 var projectsArray = [];
 
 
-function Project(opts){
-  this.name = opts.name;
-  this.description = opts.description;
-  this.url = opts.url;
-  this.date = opts.date;
-  this.category = opts.category;
+function Project(rawDataObj){
+  this.name = rawDataObj.name;
+  this.description = rawDataObj.description;
+  this.url = rawDataObj.url;
+  this.date = rawDataObj.date;
+  this.category = rawDataObj.category;
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('section.template').clone();
-
-  $newProject.removeClass('template');
-
-
-  if (!this.date) $newProject.addClass('draft');
-  $newProject.data('category', this.category);
-
-  $newProject.attr('data-category', this.category);
-  $newProject.find('h1').html(this.name);
-  $newProject.find('.description').html(this.description);
-  $newProject.find('.description').attr(this.url);
-  $newProject.find('iframe').attr('src', this.url);
-  $newProject.find('a').attr('href', this.url);
-  $newProject.find('time').attr('datetime', this.date);
-  $newProject.addClass('pbox');
-
   $('section.template').hide('.template');
+  var source = $('#template').html();
+  var template = Handlebars.compile(source);
 
-  $('section').removeAttr('style');
-  return $newProject;
+
+
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
+  this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
+
+  return template(this);
 };
+
 rawData.sort(function(a,b) {
   return (new Date(b.date)) - (new Date(a.date));
 });
@@ -41,10 +31,8 @@ rawData.forEach(function(projectObject) {
   projectsArray.push(new Project(projectObject));
 });
 
-projectsArray.forEach(function(a) {
-  $('#projectstodom').append(a.toHtml());
+projectsArray.forEach(function(projectsArray) {
+  $('#projectstodom').append(projectsArray.toHtml());
 });
 
-$(document).ready(function() {
-  $(".livepreview").livePreview();
-});
+console.log('cat: ' + template);
