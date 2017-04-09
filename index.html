@@ -14,11 +14,13 @@
 
   <script id="aboutTemplate" type="text/x-handlebars-template">
     <section class="abox" data-category="{{acategory}}">
-      <section id="proheader" class="proheader">
-        <h1 class="protitle">{{company}}</h1>
+      <section>
+        <h1 class="resTitle">{{company}}</h1>
       </Section>
       <section>
-        <h2>Description:</h2>
+        <p>{{cityPlace}}</p>
+        <p>{{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
+        <p>{{position}}</p>
         <p>{{description}}</p>
         {{publishStatus}}
       </section>
@@ -79,8 +81,8 @@
           </select>
         </li>
       </ul>
-      <h1>About:</h1>
-      <section class="sectionmain">
+      <h1>About Me:</h1>
+      <section class="aboutmain">
         <section class="abox" data-category="Introduction">
 
           <img src="assets/images/JamesBillard.jpg">
