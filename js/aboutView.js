@@ -1,15 +1,15 @@
-// 'use strict';
-//
+'use strict';
+
 var view = {};
 
 view.populateFilter = function() {
-  $('section').find('.pbox').each(function() {
+  $('section').find('.abox').each(function() {
     var category, optionTag;
     category = $(this).attr('data-category');
     console.log(category);
     optionTag = '<option value="' + category + '">' + category + '</option>';
-    if ($('#category-filter option[value="' + category + '"]').length === 0) {
-      $('#category-filter').append(optionTag);
+    if ($('#project-category-filter option[value="' + category + '"]').length === 0) {
+      $('#project-category-filter').append(optionTag);
     }
   });
 };
@@ -17,7 +17,7 @@ view.populateFilter = function() {
 
 
 view.handleCategoryFilter = function() {
-  $('#category-filter').on('change', function() {
+  $('#project-category-filter').on('change', function() {
     if ($(this).val()) {
       console.log('happening');
 
@@ -71,8 +71,5 @@ $(function(){
     view.populateFilter();
     view.handleCategoryFilter();
     view.handleMainNav();
-
-  // articleView.populateFilters();
-  // articleView.handleCategoryFilter();
   // articleView.setTeasers();
 });
