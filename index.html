@@ -12,6 +12,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Billard in Code</title>
 
+  <script id="abouttemplate" type="text/x-handlebars-template">
+    <section class="pbox" data-category="{{acategory}}">
+      <section id="proheader" class="proheader">
+        <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
+      </Section>
+      <section>
+        <div o class="wrap">
+          <iframe scrolling = "no" src="{{url}}" target="_top" class="frame"></iframe>
+        </div>
+        <h2>Description:</h2>
+        <a href = "{{url}}" class="description" target="_blank">{{description}}</a>
+        {{publishStatus}}
+      </section>
+    </section>
+
+  </script>
+
   <script id="template" type="text/x-handlebars-template">
     <section class="pbox" data-category="{{category}}">
       <section id="proheader" class="proheader">
@@ -66,6 +83,10 @@
           <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
         </span>
 
+        <section id="abouttodom">
+
+        </section>
+
       </section>
     </section>
 
@@ -115,7 +136,11 @@
 <script src="js/vendor/scripts/jquery-3.2.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 
-<script src="js/vendor/scripts/jquery-live-preview.js" charset="utf-8"></script>
+<script src="js/aboutObjects.js" charset="utf-8"></script>
+<script src="js/aboutApp.js" charset="utf-8"></script>
+<script src="js/aboutView.js" charset="utf-8"></script>
+
+
 <script src="js/projectobjects.js" charset="utf-8"></script>
 <script src="js/projectApp.js" charset="utf-8"></script>
 <script src="js/projectView.js" charset="utf-8"></script>
