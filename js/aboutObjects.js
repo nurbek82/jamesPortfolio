@@ -2,6 +2,16 @@
 
 var aboutRawData = [
   {
+    company:'Fort McMurray Public School District',
+    cityPlace: 'Fort McMurray, Alberta',
+    position: 'Teacher-on-Call',
+    employmentPeriodStart: '2014',
+    employmentPeriodEnd: '2015',
+    description: 'Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation/ Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community',
+    acategory: 'Work Experience',
+  },
+
+  {
     company:'Northern Lights School Division #113',
     cityPlace: 'La Ronge, Saskatchewan',
     position: 'Pre-Cam Community School, La Ronge, Saskatchewan, Grade 5 French Immersion Teacher',
