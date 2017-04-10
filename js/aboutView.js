@@ -39,36 +39,36 @@ aboutView.aboutHandleCategoryFilter = function() {
 // aboutView.handleMainNav = function () {
 //
 //
-//   $('.main-nav').on('click', '.tab', function() {
+//   $('.main-nav').on('click', ‘.tab', function() {
 //
 //     event.preventDefault();
-//     $('section.tab-content').hide();
+//     $(‘section.tab-content').hide();
 //     // 2.
-//     $('#' + $(this).attr('data-content')).fadeIn();
+//     $(‘#' + $(this).attr(‘data-content')).fadeIn();
 //
 //   });
 // };
 
 // articleView.setTeasers = function() {
 //   // Truncate logic to show only first two elements within the article body.
-//   $('.article-body *:nth-of-type(n+2)').hide();
-//   $('article').on('click', '.read-on', function(){
-//     console.log('event');
+//   $(‘.article-body *:nth-of-type(n+2)').hide();
+//   $(‘article').on(‘click', ‘.read-on', function(){
+//     console.log(‘event');
 //     event.preventDefault();
-//     $(this).siblings('section.article-body').children().toggle();
+//     $(this).siblings(‘section.article-body').children().toggle();
 //
-//     if ($(this).html() === 'Read on →') {
-//       $(this).html('Read less &larr;');
+//     if ($(this).html() === ‘Read on →') {
+//       $(this).html(‘Read less &larr;');
 //     }
 //     else {
-//       $(this).html('Read on →');
+//       $(this).html(‘Read on →');
 //     }
 //   });
 $(function(){
 
 
-    aboutView.aboutPopulateFilter();
-    aboutView.aboutHandleCategoryFilter();
-    aboutView.handleMainNav();
-  // articleView.setTeasers();
+   aboutView.aboutPopulateFilter();
+   aboutView.aboutHandleCategoryFilter();
+  //  aboutView.handleMainNav();
+ // articleView.setTeasers();
 });
