@@ -12,18 +12,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Billard in Code</title>
 
-  <script id="abouttemplate" type="text/x-handlebars-template">
-    <section class="pbox" data-category="{{acategory}}">
-      <section id="proheader" class="proheader">
-        <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
+
+  <script id="aboutTemplate" type="text/x-handlebars-template">
+    <section class="abox" data-category="{{acategory}}">
+      <section>
+        <h1 class="resTitle">{{company}}</h1>
       </Section>
       <section>
-        <div o class="wrap">
-          <iframe scrolling = "no" src="{{url}}" target="_top" class="frame"></iframe>
-        </div>
-        <h2>Description:</h2>
-        <a href = "{{url}}" class="description" target="_blank">{{description}}</a>
-        {{publishStatus}}
+        <p>{{cityPlace}}</p>
+        <p>{{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
+        <p>{{position}}</p>
+        <p>{{description}}</p>
       </section>
     </section>
 
@@ -55,6 +54,7 @@
       </section>
       <nav class="main-nav"><i class="fa fa-bars icon-menu" aria-hidden="true"></i><ul>
 
+
         <li class="navlink tab" data-content="aboutMe"><a href="#" class="navtext"><i class="fa fa-id-card icons" aria-hidden="true"></i>About Me</a></li>
 
         <li class="navlink tab" data-content="myProjects"><a href="#" class="navtext"><i class="fa fa-home icons" aria-hidden="true"></i>My Projects</a></li>
@@ -75,13 +75,22 @@
   <main class="mainflex">
 
     <section class="about tab-content" id="aboutMe">
-      <h1>About:</h1>
-      <section class="sectionmain">
+      <ul id="filters">
+        <li>
+          <select id="about-category-filter">
+            <option value="">-- Filter by Resume Section --</option>
+          </select>
+        </li>
+      </ul>
+      <h1>About Me:</h1>
+      <section class="aboutmain">
+        <section class="abox" data-category="Introduction">
 
-        <img src="assets/images/JamesBillard.jpg">
-        <span class="sidebyside">
-          <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
-        </span>
+          <img src="assets/images/JamesBillard.jpg">
+          <span class="sidebyside">
+            <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
+          </span>
+        </section>
 
         <section id="abouttodom">
 
