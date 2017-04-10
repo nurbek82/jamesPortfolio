@@ -4,6 +4,16 @@ var aboutRawData = [
   {
     company:'Northern Lights School Division #113',
     cityPlace: 'La Ronge, Saskatchewan',
+    position: 'Pre-Cam Community School, La Ronge, Saskatchewan, Grade 5 French Immersion Teacher',
+    employmentPeriodStart: '2013',
+    employmentPeriodEnd: '2014',
+    description: 'Fostered cooperative learning for diverse learners through experiential education experiences. Administered formative and summative assessments to guide instruction. Worked collaboratively with school supervisors and student guardians to differentiate instruction for all students. Designed interactive, student-interest-driven lesson plans to promote active learning and nurture critical thinking skills. Participated in professional development opportunities. Took an active role in school committees and extracurricular activities.',
+    acategory: 'Work Experience',
+  },
+
+  {
+    company:'Northern Lights School Division #113',
+    cityPlace: 'La Ronge, Saskatchewan',
     position: 'Churchill Community High School, La Ronge, Saskatchewan, Satellite Teacher (English 8, 9 and 11, Core French 7-9, Wellness 10 French Immersion and English)',
     employmentPeriodStart: '2012',
     employmentPeriodEnd: '2013',
