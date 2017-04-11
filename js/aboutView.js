@@ -21,9 +21,9 @@ aboutView.aboutHandleCategoryFilter = function() {
       console.log('happening');
 
 
-      $('section.abox').hide('pulsate');
+      $('section.abox').hide('pulsate', {duration: 1000});
 
-      $('section[data-category="' + $(this).val() + '"]').animate({opacity:1}).delay(200).slideDown('slow');
+      $('section[data-category="' + $(this).val() + '"]').animate({opacity:1}).delay(500).slideDown('slow');
       $('section[data-category="' + $(this).val() + '"]').effect( "bounce" );
       var $newArticle = ($(this).val());
       console.log($newArticle);
