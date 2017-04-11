@@ -40,16 +40,16 @@ aboutView.aboutHandleCategoryFilter = function() {
 aboutView.setTeasers = function() {
   // Truncate logic to show only first two elements within the article body.
   console.log('HELLLOOOOOOO');
-  $('.article-body *:nth-of-type(n+2)').hide();
+  $('.article-body').hide();
   $('section.abox').on('click', '.read-on', function(){
     event.preventDefault();
-    $(this).siblings('section.article-body').children().toggle();
+    $(this).siblings('section.article-body').slideToggle();
 
-    if ($(this).html() === 'Read more →') {
+    if ($(this).html() === 'Click Here to Read More About this Position →') {
       $(this).html('Read less &larr;');
     }
     else {
-      $(this).html('Read more →');
+      $(this).html('Click Here to Read More About this Position →');
     }
   });
 };
