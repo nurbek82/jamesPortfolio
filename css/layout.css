@@ -88,6 +88,10 @@ Body{
   align-items: center;
 }
 
+.mypic{
+  margin-left: 40%;
+}
+
 .icon-menu{
   text-align: right;
 }
@@ -150,8 +154,7 @@ p{
 
 
 .proheader{
-  width: 45%;
-  display: inline-flex;
+  text-align: center;
 }
 
 .description{
