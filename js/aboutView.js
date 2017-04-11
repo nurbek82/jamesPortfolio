@@ -35,40 +35,27 @@ aboutView.aboutHandleCategoryFilter = function() {
     $('#author-filter').val('');
   });
 };
-//
-// aboutView.handleMainNav = function () {
-//
-//
-//   $('.main-nav').on('click', '.tab', function() {
-//
-//     event.preventDefault();
-//     $('section.tab-content').hide();
-//     // 2.
-//     $('#' + $(this).attr('data-content')).fadeIn();
-//
-//   });
-// };
-
-// articleView.setTeasers = function() {
-//   // Truncate logic to show only first two elements within the article body.
-//   $('.article-body *:nth-of-type(n+2)').hide();
-//   $('article').on('click', '.read-on', function(){
-//     console.log('event');
-//     event.preventDefault();
-//     $(this).siblings('section.article-body').children().toggle();
-//
-//     if ($(this).html() === 'Read on →') {
-//       $(this).html('Read less &larr;');
-//     }
-//     else {
-//       $(this).html('Read on →');
-//     }
-//   });
-$(function(){
 
 
+aboutView.setTeasers = function() {
+  // Truncate logic to show only first two elements within the article body.
+  console.log('HELLLOOOOOOO');
+  $('.article-body *:nth-of-type(n+2)').hide();
+  $('section.abox').on('click', '.read-on', function(){
+    event.preventDefault();
+    $(this).siblings('section.article-body').children().toggle();
+
+    if ($(this).html() === 'Read more →') {
+      $(this).html('Read less &larr;');
+    }
+    else {
+      $(this).html('Read more →');
+    }
+  });
+};
+
+  $(function(){
     aboutView.aboutPopulateFilter();
     aboutView.aboutHandleCategoryFilter();
-    aboutView.handleMainNav();
-  // articleView.setTeasers();
-});
+    aboutView.setTeasers();
+  });
