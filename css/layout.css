@@ -88,6 +88,10 @@ Body{
   align-items: center;
 }
 
+.mypic{
+  margin-left: 40%;
+}
+
 .icon-menu{
   text-align: right;
 }

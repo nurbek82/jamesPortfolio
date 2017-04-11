@@ -2,12 +2,21 @@
 
 var aboutRawData = [
   {
+    company:'Seattle Public Schools',
+    cityPlace: 'Seattle, Washington',
+    position: '5th Grade Teacher',
+    employmentPeriodStart: '2016',
+    employmentPeriodEnd: '2017',
+    description: 'Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation. Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community.',
+    acategory: 'Work Experience',
+  },
+  {
     company:'Fort McMurray Public School District',
     cityPlace: 'Fort McMurray, Alberta',
     position: 'Teacher-on-Call',
     employmentPeriodStart: '2014',
     employmentPeriodEnd: '2015',
-    description: 'Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation/ Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community',
+    description: 'Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation/ Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community.',
     acategory: 'Work Experience',
   },
 
@@ -27,7 +36,7 @@ var aboutRawData = [
     position: 'Churchill Community High School, La Ronge, Saskatchewan, Satellite Teacher (English 8, 9 and 11, Core French 7-9, Wellness 10 French Immersion and English)',
     employmentPeriodStart: '2012',
     employmentPeriodEnd: '2013',
-    description: 'Provided students with constructive and positive feedback to foster intrinsic motivation. Presented ideas clearly and concisely using multiple platforms such as guest speakers, field trips, videos, Power Point presentations, small group work, and one-on-one mentorship ',
+    description: 'Provided students with constructive and positive feedback to foster intrinsic motivation. Presented ideas clearly and concisely using multiple platforms such as guest speakers, field trips, videos, Power Point presentations, small group work, and one-on-one mentorship.',
     acategory: 'Work Experience',
   },
 
