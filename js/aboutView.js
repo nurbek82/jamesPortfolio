@@ -53,9 +53,3 @@ aboutView.setTeasers = function() {
     }
   });
 };
-
-  $(function(){
-    aboutView.aboutPopulateFilter();
-    aboutView.aboutHandleCategoryFilter();
-    aboutView.setTeasers();
-  });

@@ -21,15 +21,6 @@ Resume.prototype.aboutToHtml = function() {
 
 
 
-
-// aboutRawData.forEach(function(aboutObject) {
-//  resumeArray.push(new Resume(aboutObject));
-// });
-
-resumeArray.forEach(function(about) {
-  $('#abouttodom').append(about.aboutToHtml());
-});
-
 $(function(){
   $.ajax({
     url: '/js/aboutObjects.json',
@@ -40,9 +31,12 @@ $(function(){
     data.forEach(function(aboutObject) {
       resumeArray.push(new Resume(aboutObject));
     });
-  }).fail(function(xhr, status, error){
-    console.log("Status: " + status + " Error: " + error);
-    console.log(xhr);
-});
+    resumeArray.forEach(function(about) {
+      $('#abouttodom').append(about.aboutToHtml());
+    });
+    aboutView.aboutPopulateFilter();
+    aboutView.aboutHandleCategoryFilter();
+    aboutView.setTeasers();
+  })
   console.log('request started: ' + new Date());
 });
