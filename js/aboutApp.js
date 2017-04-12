@@ -40,3 +40,8 @@ $(function(){
   })
   console.log('request started: ' + new Date());
 });
+
+$(function(){
+    view.handleCategoryFilter();
+    view.handleMainNav();
+});

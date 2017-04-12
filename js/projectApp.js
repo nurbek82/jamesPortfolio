@@ -17,10 +17,29 @@ Project.prototype.toHtml = function() {
   return template(this);
 };
 
-rawData.forEach(function(projectObject) {
-  projectsArray.push(new Project(projectObject));
+
+
+
+
+$(function(){
+  $.ajax({
+    url: '/js/projectobjects.json',
+    dataType : "json",
+  }).done(function(data) {
+    console.log(data);
+    console.log('request done: ' + new Date());
+    data.forEach(function(projectObject) {
+      projectsArray.push(new Project(projectObject));
+    });
+    projectsArray.forEach(function(pjects) {
+      $('#projectstodom').append(pjects.toHtml());
+    });
+    $('section.tab-content').hide();
+    $('#aboutMe').fadeIn();
+    view.populateFilter();
+  })
+  console.log('request started: ' + new Date());
 });
 
-projectsArray.forEach(function(pjects) {
-  $('#projectstodom').append(pjects.toHtml());
-});
+view.handleCategoryFilter();
+view.handleMainNav();

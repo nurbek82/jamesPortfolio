@@ -38,7 +38,7 @@ aboutView.aboutHandleCategoryFilter = function() {
 
 
 aboutView.setTeasers = function() {
-  // Truncate logic to show only first two elements within the article body.
+
   console.log('HELLLOOOOOOO');
   $('.article-body').hide();
   $('section.abox').on('click', '.read-on', function(){
