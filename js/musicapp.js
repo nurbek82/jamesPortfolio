@@ -10,15 +10,26 @@ function Music(musicRawDataObj){
 }
 
 
-Music.prototype.aboutToHtml = function() {
- var aboutSource = $('#musicTemplate').html();
- var aboutTemplate = Handlebars.compile(aboutSource);
- return aboutTemplate(this);
+Music.prototype.musicToHtml = function() {
+ var musicSource = $('#musicTemplate').html();
+ var musicTemplate = Handlebars.compile(musicSource);
+ return musicTemplate(this);
 };
-musicRawData.forEach(function(aboutObject) {
- musicArray.push(new Music(aboutObject));
-});
 
-musicArray.forEach(function(about) {
- $('#musictodom').append(about.aboutToHtml());
+
+$(function(){
+  $.ajax({
+    url: '/js/musicobjects.json',
+    dataType : "json",
+  }).done(function(data) {
+    console.log(data);
+    console.log('request done: ' + new Date());
+    data.forEach(function(musicObject) {
+      musicArray.push(new Music(musicObject));
+    });
+    musicArray.forEach(function(music) {
+      $('#musictodom').append(music.musicToHtml());
+    });
+  })
+  console.log('request started: ' + new Date());
 });
