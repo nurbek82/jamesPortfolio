@@ -55,15 +55,7 @@ if (localStorage.projectRawData) {
       view.populateFilter();
     })
   })
-
 }
-
-
-
-
-
-
-
 
 $(function(){
   view.handleCategoryFilter();
