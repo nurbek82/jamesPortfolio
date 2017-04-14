@@ -18,8 +18,6 @@ aboutView.aboutPopulateFilter = function() {
 aboutView.aboutHandleCategoryFilter = function() {
   $('#about-category-filter').on('change', function() {
     if ($(this).val()) {
-      console.log('happening');
-
 
       $('section.abox').hide('pulsate', {duration: 1000});
 
@@ -39,7 +37,6 @@ aboutView.aboutHandleCategoryFilter = function() {
 
 aboutView.setTeasers = function() {
 
-  console.log('HELLLOOOOOOO');
   $('.article-body').hide();
   $('section.abox').on('click', '.read-on', function(){
     event.preventDefault();
