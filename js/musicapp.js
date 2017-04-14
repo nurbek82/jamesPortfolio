@@ -24,9 +24,8 @@ if (localStorage.musicRawData) {
   musicArray.forEach(function(music) {
     $('#musictodom').append(music.musicToHtml());
   });
-  console.log("BALLS");
 }else {
-  console.log("COCK");
+
   $(function(){
     $.ajax({
       url: '/js/musicobjects.json',

@@ -20,26 +20,52 @@ Project.prototype.toHtml = function() {
 
 
 
+if (localStorage.projectRawData) {
+  var project = JSON.parse(localStorage.projectRawData);
+  project.forEach(function(projectObject) {
+    projectsArray.push(new Project(projectObject));
+  });
+  projectsArray.forEach(function(pjects) {
+    $('#projectstodom').append(pjects.toHtml());
+  });
+
+  $('section.tab-content').hide();
+  $('#aboutMe').fadeIn();
+  view.populateFilter();
+
+}else {
+  $(function(){
+    $.ajax({
+      url: '/js/projectobjects.json',
+      dataType : "json",
+    }).done(function(data) {
+      localStorage.setItem('projectRawData', JSON.stringify(data));
+      var project = JSON.parse(localStorage.projectRawData);
+
+      project.forEach(function(projectObject) {
+        projectsArray.push(new Project(projectObject));
+      });
+
+      projectsArray.forEach(function(pjects) {
+        $('#projectstodom').append(pjects.toHtml());
+      });
+
+      $('section.tab-content').hide();
+      $('#aboutMe').fadeIn();
+      view.populateFilter();
+    })
+  })
+
+}
+
+
+
+
+
+
+
 
 $(function(){
-  $.ajax({
-    url: '/js/projectobjects.json',
-    dataType : "json",
-  }).done(function(data) {
-    console.log(data);
-    console.log('request done: ' + new Date());
-    data.forEach(function(projectObject) {
-      projectsArray.push(new Project(projectObject));
-    });
-    projectsArray.forEach(function(pjects) {
-      $('#projectstodom').append(pjects.toHtml());
-    });
-    $('section.tab-content').hide();
-    $('#aboutMe').fadeIn();
-    view.populateFilter();
-  })
-  console.log('request started: ' + new Date());
+  view.handleCategoryFilter();
+  view.handleMainNav();
 });
-
-view.handleCategoryFilter();
-view.handleMainNav();
