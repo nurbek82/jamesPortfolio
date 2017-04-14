@@ -20,28 +20,58 @@ Resume.prototype.aboutToHtml = function() {
 };
 
 
+if (localStorage.aboutRawData) {
+  var about = JSON.parse(localStorage.aboutRawData);
 
-$(function(){
-  $.ajax({
-    url: '/js/aboutObjects.json',
-    dataType : "json",
-  }).done(function(data) {
-    console.log(data);
-    console.log('request done: ' + new Date());
-    data.forEach(function(aboutObject) {
-      resumeArray.push(new Resume(aboutObject));
-    });
-    resumeArray.forEach(function(about) {
-      $('#abouttodom').append(about.aboutToHtml());
-    });
-    aboutView.aboutPopulateFilter();
-    aboutView.aboutHandleCategoryFilter();
-    aboutView.setTeasers();
+  about.forEach(function(aboutObject) {
+    resumeArray.push(new Resume(aboutObject));
+  });
+  resumeArray.forEach(function(about) {
+    $('#abouttodom').append(about.aboutToHtml());
+  });
+  aboutView.aboutPopulateFilter();
+  aboutView.aboutHandleCategoryFilter();
+  aboutView.setTeasers();
+
+}else {
+  $(function(){
+    $.ajax({
+      url: '/js/aboutObjects.json',
+      dataType : "json",
+    }).done(function(data) {
+      localStorage.setItem('aboutRawData', JSON.stringify(data));
+      var about = JSON.parse(localStorage.aboutRawData);
+
+      about.forEach(function(aboutObject) {
+        resumeArray.push(new Resume(aboutObject));
+      });
+      resumeArray.forEach(function(about) {
+        $('#abouttodom').append(about.aboutToHtml());
+      });
+      aboutView.aboutPopulateFilter();
+      aboutView.aboutHandleCategoryFilter();
+      aboutView.setTeasers();
+    })
   })
-  console.log('request started: ' + new Date());
-});
+}
 
-$(function(){
-    view.handleCategoryFilter();
-    view.handleMainNav();
-});
+
+// $(function(){
+//   $.ajax({
+//     url: '/js/aboutObjects.json',
+//     dataType : "json",
+//   }).done(function(data) {
+//     console.log(data);
+//     console.log('request done: ' + new Date());
+//     data.forEach(function(aboutObject) {
+//       resumeArray.push(new Resume(aboutObject));
+//     });
+//     resumeArray.forEach(function(about) {
+//       $('#abouttodom').append(about.aboutToHtml());
+//     });
+//     aboutView.aboutPopulateFilter();
+//     aboutView.aboutHandleCategoryFilter();
+//     aboutView.setTeasers();
+//   })
+//   console.log('request started: ' + new Date());
+// });

@@ -6,7 +6,6 @@ view.populateFilter = function() {
   $('section').find('.pbox').each(function() {
     var category, optionTag;
     category = $(this).attr('data-category');
-    console.log(category);
     optionTag = '<option value="' + category + '">' + category + '</option>';
     if ($('#category-filter option[value="' + category + '"]').length === 0) {
       $('#category-filter').append(optionTag);
